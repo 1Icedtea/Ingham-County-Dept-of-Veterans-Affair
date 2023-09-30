@@ -1,0 +1,111 @@
+:root {
+  --primary-color: #15243e;
+  --secondary-color: #822020;
+  --tertiary-orange: #ffaf67;
+  --lighter-blue: #3c3b6e;
+  --white: #e0e2dc;
+  --heading: normal 400 1.5rem Lora, serif;
+  --superheading: normal 400 8rem/130% Lora, serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white);
+}
+
+html {
+  color: var(--white);
+}
+
+.navbar {
+  background-color: var(--primary-color);
+  padding: .2rem 0 .2rem 10rem;
+  font-family: Raleway;
+  font-weight: 300;
+}
+
+.search-bar {
+  background-color: transparent;
+  font-weight: medium;
+  border: none;
+}
+
+form .btn-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navbar-lower {
+  background-color: #fff;
+  position: relative;
+}
+
+.navbar-lower a {
+  color: var(--lighter-blue);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar-lower a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-lower .nav-item a {
+  padding-right: 3em!important;
+}
+
+.navbar-brand {
+  padding: 1em 2em 1em 1em;
+}
+
+.hero-section {
+  background: url(assets/hero-section.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  position: relative;
+  z-index: 99;
+  text-transform: uppercase;
+  color: var(--tertiary-orange);
+  display: flex;
+}
+
+.heading h1 {
+  font: var(--heading);
+  letter-spacing: 8px;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+
+.superheading {
+  font: var(--superheading);
+  color: var(--white);
+  letter-spacing: 2rem;
+}
+
+.hero-shape {
+  position: absolute;
+  padding-top: 7rem;
+}
+
+.hero-shape picture img {
+  mix-blend-mode: multiply;
+}
+
+.subsection {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+}
