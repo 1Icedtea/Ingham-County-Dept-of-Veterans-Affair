@@ -6,6 +6,7 @@
   --white: #e0e2dc;
   --heading: normal 400 1.5rem Lora, serif;
   --superheading: normal 400 8rem/130% Lora, serif;
+  --description-text: normal 200 .92rem Raleway, sans-serif;
 }
 
 * {
@@ -108,4 +109,29 @@ form .btn-link {
   width: 100vw;
   height: 100vh;
   background-color: var(--white);
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 64px 90px 64px 90px;
+}
+
+.card-benefits {
+  display: flex;
+  padding: 12px;
+  margin-inline-end: 2em;
+  width: 370px;
+  gap: 2em;
+}
+
+.card-title {
+  font: var(--heading);
+  color: var(--primary-color);
+}
+
+.card-text {
+  font: var(--description-text);
+  color: var(--primary-color);
 }
