@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Raleway:wght@100;200;300;400;500;700&display=swap');
+
 :root {
   --primary-color: #15243e;
   --secondary-color: #822020;
@@ -5,8 +7,8 @@
   --lighter-blue: #3c3b6e;
   --white: #e0e2dc;
   --heading: normal 400 1.5rem Lora, serif;
-  --superheading: normal 400 8rem/130% Lora, serif;
-  --description-text: normal 200 .92rem Raleway, sans-serif;
+  --superheading: normal 400 8rem/130% 'Lora', serif;
+  --description-text: normal 300 .92rem 'Raleway', sans-serif;
 }
 
 * {
@@ -16,11 +18,7 @@
 }
 
 body {
-  background-color: var(--white);
-}
-
-html {
-  color: var(--white);
+  background-color: #fff;
 }
 
 .navbar {
@@ -105,12 +103,6 @@ form .btn-link {
   mix-blend-mode: multiply;
 }
 
-.subsection {
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--white);
-}
-
 .card-wrapper {
   display: flex;
   justify-content: center;
@@ -118,7 +110,7 @@ form .btn-link {
   margin: 64px 90px 64px 90px;
 }
 
-.card-benefits {
+.card-content {
   display: flex;
   padding: 12px;
   margin-inline-end: 2em;
@@ -135,3 +127,88 @@ form .btn-link {
   font: var(--description-text);
   color: var(--primary-color);
 }
+
+.subsection {
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.left-content {
+  display: flex;
+  align-items: flex-end;
+  width: 63vw;
+  height: 65vh;
+  background-color: #b22234;
+}
+
+.newsboard-container {
+  height: 100%;
+  padding: 8em 4em 8em 4em;
+}
+
+.newsboard-content-wrapper {
+  padding-top: 1.5em;
+}
+
+.newsboard-content:nth-child(2) {
+  padding-top: 1rem;
+}
+
+.newsboard-content:nth-child(3) {
+  padding-top: 1rem;
+  border: none;
+}
+
+.newsboard-content {
+  border-bottom: solid 1px #eff2f6;
+  padding-bottom: .8rem;
+}
+
+.newsboard-heading h3 {
+  font: var(--heading);
+  color: var(--white);
+  font-size: 24px;
+}
+
+.subheading {
+  font-family: Raleway;
+  font-size: 14px;
+  color: #fff;
+  opacity: 80%;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.news-date {
+  font-family: 'Lora', serif;
+  font-size: 14px;
+  color: var(--white);
+  opacity: 70%;
+  margin-bottom: .5rem;
+}
+
+.news-title {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: var(--white);
+  font-size: 16px;
+}
+
+.callToActionBtn {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  background-color: #e33f54;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-top: 24px;
+}
+.right-content {
+  background-color: #eff2f6;
+  width: 38vw;
+  height: 65vh;
+}
+
