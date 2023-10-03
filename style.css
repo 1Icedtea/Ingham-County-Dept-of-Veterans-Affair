@@ -8,6 +8,9 @@
   --white: #e0e2dc;
   --heading: normal 400 1.5rem Lora, serif;
   --superheading: normal 400 8rem/130% 'Lora', serif;
+  --subsection-heading: normal 400 24px 'Lora', serif;
+  --subsection-subheading: normal 500 14px 'Raleway', sans-serif;
+  --subsection-subtitle: normal 700 16px 'Raleway', sans-serif;
   --description-text: normal 300 .92rem 'Raleway', sans-serif;
 }
 
@@ -143,7 +146,7 @@ form .btn-link {
 
 .newsboard-container {
   height: 100%;
-  padding: 8em 4em 8em 4em;
+  padding: 6em 4em 8em 4em;
 }
 
 .newsboard-content-wrapper {
@@ -206,9 +209,102 @@ form .btn-link {
   padding: 0.5rem 2rem 0.5rem 2rem;
   margin-top: 24px;
 }
+
 .right-content {
   background-color: #eff2f6;
   width: 38vw;
   height: 65vh;
+}
+
+.shortcuts-container {
+  height: 100%;
+  padding: 6em 4em 8em 4em;
+}
+
+.shortcuts-heading {
+  color: var(--primary-color);
+}
+
+.shortcuts-heading h3 {
+  font: var(--subsection-heading);
+}
+
+.shortcuts-heading p {
+  font: var(--subsection-subtitle);
+}
+
+.shortcut-links-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.shortcut-links-list li a {
+  text-decoration: none;
+  font: var(--subsection-subtitle);
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1600px) {
+  .left-content img {
+    width: 95%;
+  }
+
+  .newsboard-container {
+    padding: 4em 4em 8em 4em;;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .left-content img {
+    width: 100%;
+  }
+
+  .newsboard-container {
+    height: 0;
+    padding: 4em 4em 8em 4em;
+    position: absolute;
+    top: 140vh;
+    display: flex;
+  }
+
+  .newsboard-heading h3 {
+    font-size: 32px;
+  }
+
+  .subheading {
+    font-size: 16px;
+  }
+
+  .newsboard-content-wrapper {
+    height: 30vh;
+    padding: 0 5rem;
+    margin: 2rem 1rem 2rem 6rem;
+  }
+
+  .newsboard-content {
+    border: none;
+    padding: 0;
+  }
+
+  .content-divider {
+    border-bottom: 1px solid #fff;
+    opacity: 30%;
+  }
+
+  .callToActionBtn {
+    width: 54%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .newsboard-container {
+    padding: 3em 4em 8em 4em;
+  }
+
+  .newsboard-content-wrapper {
+    padding: 1rem 3rem;
+    margin: 2rem 1.5rem 2rem 3rem;
+  }
 }
 
