@@ -146,7 +146,7 @@ form .btn-link {
 
 .newsboard-container {
   height: 100%;
-  padding: 6em 4em 8em 4em;
+  padding: 8em 4em 8em 4em;
 }
 
 .newsboard-content-wrapper {
@@ -218,7 +218,7 @@ form .btn-link {
 
 .shortcuts-container {
   height: 100%;
-  padding: 6em 4em 8em 4em;
+  padding: 7em 4em 8em 4em;
 }
 
 .shortcuts-heading {
@@ -230,19 +230,38 @@ form .btn-link {
 }
 
 .shortcuts-heading p {
-  font: var(--subsection-subtitle);
+  font: var(--subsection-subheading);
+  padding: 12px 0 12px 0;
+  margin-bottom: 0;
 }
 
 .shortcut-links-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  width: 14rem;
+}
+
+.shortcut-links-list li {
+  width: fit-content;
+}
+
+.shortcut-links-list li:first-child {
+  padding-top: 4px;
 }
 
 .shortcut-links-list li a {
   text-decoration: none;
   font: var(--subsection-subtitle);
   color: var(--secondary-color);
+  font-size: 16px;
+}
+
+.shortcut-links-divider {
+  border-bottom: 1px solid #000;
+  opacity: 20%;
+  background-color: none;
+  margin: .5rem 0 .5rem 0;
 }
 
 @media only screen and (max-width: 1600px) {
@@ -290,6 +309,7 @@ form .btn-link {
   .content-divider {
     border-bottom: 1px solid #fff;
     opacity: 30%;
+    background-color: none;
   }
 
   .callToActionBtn {
@@ -305,6 +325,45 @@ form .btn-link {
   .newsboard-content-wrapper {
     padding: 1rem 3rem;
     margin: 2rem 1.5rem 2rem 3rem;
+  }
+
+  .subheading {
+    font-size: 14px;
+  }
+
+  .newsboard-heading h3 {
+    font-size: 24px;
+}
+}
+
+@media only screen and (max-height: 1080px) {
+  .newsboard-container {
+    padding: 8em 4em 8em 4em;
+  }
+}
+
+@media only screen and (max-height: 900px) {
+  .newsboard-container {
+    padding: 6em 4em 8em 4em;
+  }
+}
+
+@media only screen and (min-height: 720px) and (max-height: 899px) {
+
+  .left-content {
+    height: 90vh;
+  }
+
+  .right-content {
+    height: 90vh;
+  }
+  
+  .newsboard-container {
+    padding: 11em 4em 8em 4em;
+  }
+
+  .newsboard-content-wrapper {
+    margin: 2rem 1.5rem 2rem 5rem;
   }
 }
 
