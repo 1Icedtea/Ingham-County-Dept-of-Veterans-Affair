@@ -24,6 +24,8 @@ body {
   background-color: #fff;
 }
 
+/* ?  ⛯  N a v i g a t i o n  ⛯   */
+
 .navbar {
   background-color: var(--primary-color);
   padding: .2rem 0 .2rem 10rem;
@@ -64,6 +66,8 @@ form .btn-link {
 .navbar-brand {
   padding: 1em 2em 1em 1em;
 }
+
+/* ? 🌟  H e r o  S e c t i  o n  🌟  */
 
 .hero-section {
   background: url(assets/hero-section.png);
@@ -132,9 +136,11 @@ form .btn-link {
 }
 
 .subsection {
-  height: 100vh;
+  height: 65vh;
   background-color: var(--white);
 }
+
+/* *  ⬅️  S ub s e c t i o n  👈  l e f t 👈 c o n t e n t   ⬅️ */
 
 .left-content {
   display: flex;
@@ -210,6 +216,8 @@ form .btn-link {
   margin-top: 24px;
 }
 
+/* ? ➡️  S u b s e c t i o n  👉  r i g h t 👉 c o n t e n t  ➡️  */
+
 .right-content {
   background-color: #eff2f6;
   width: 38vw;
@@ -262,6 +270,30 @@ form .btn-link {
   opacity: 20%;
   background-color: none;
   margin: .5rem 0 .5rem 0;
+}
+
+/* ! 🦶    F o o t e r   🦶  */
+
+footer {
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 1.5rem 3em 1.5rem 15rem;
+}
+
+.company-info-wrapper {
+  width: 37vw;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.company-info-wrapper p {
+  color: #58606f;
+  font-size: 14px;
+  font: normal 400 13px 'Raleway', sans-serif;
+}
+
+picture img {
+  padding: 0 2.5rem 0 2.5rem;
 }
 
 @media only screen and (max-width: 1600px) {
