@@ -7,15 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingham County DVA</title>
   <link rel="icon" href="assets/icon.png" type="image/x-icon"/>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
   
-  <div class="nav-wrapper sticky-lg-top">
+  <!-- <div class="nav-wrapper sticky-lg-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="container-fluid d-flex">
+        <div class="upper-nav" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">About</a>
@@ -69,9 +69,79 @@
         </div>
       </div>
     </nav>
-  </div>
+  </div> -->
 
-
+  <nav class="navbar navbar-expand-md fixed-top shadow-lg px-3" data-bs-theme="light">
+    <div class="container-fluid top-nav px-3">
+      <div class="top-nav-container">
+        <ul class="navbar-nav mb-lg-0 d-flex px-3 align-items-center top-nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item quicklink-fb ms-auto">
+            <a href="#" class="nav-link">
+              <img src="assets/facebook-mini.png" alt="fb" />  
+              <span class="quicklink-text">stay connected</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid bottom-nav">
+      <a class="navbar-brand z-1" href="#">
+        <img src="assets/logo.png" alt="Ingham County Dept. of Veteran Affairs Logo" height="56px">
+      </a>
+      <button class="navbar-toggler z-1" type="button" id="toggleNav" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="first-nav">
+          <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">VA Benefits</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Eligibility</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Outreach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Financial Assitance</a>
+            </li>
+          </ul>
+        </div>
+        <div class="second-nav">
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+          </ul>
+        </div>
+        <button class="next-button" href="#nextNav" id="nextNav">
+          <img src="assets/right-arrow.svg" height="80px"/>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
   <section class="hero-section container-fluid w-100">
     <div class="heading">
       <h1>
@@ -114,10 +184,10 @@
       <div class="card-content"> 
         <div class="card-icon">
           <svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="53px" height="49px">
-<image  x="0px" y="0px" width="53px" height="49px"  xlink:href="data:img/png;base64,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" />
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="53px" height="49px">
+          <image  x="0px" y="0px" width="53px" height="49px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAxCAYAAAB6d+FmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5woCARwyCE43WgAACpZJREFUaN6FmnuMXVUVxn/f7bSVWgQmGCD4ogKtEkoLSUFLgIKQPlKDlYfKowX9A4WYKIqKmBI0EF9ERSzGoKYITQilhBRrqLZJ5dVCLcEES0kRGlEeglCqTWk7n3+cc/ZZe58zw05m7tx79l57Pb71vKN7j52BJMDYIAGAXb1KhM+FMYKJwJHAe0Bv2X4Z2NXsb1ZJLz6LexDUjybbHAYcCOyUeBHY03empBX5HaoeOn2QVnsREjKchn2BxFk2x0rNYyNhw3bBH4G7bdaXwmWEkwKF5DnABTZnS5pS0a2eGyzYBvwJWGHzkEQyQkZVLX2tmjoz2xAlrt8vlLjBZkbGaMNedz8SW4CrgfX0LmH7DImbgZkNrbEsWq8twLXAH0azlgSDRis9cDkEuEfS/aAZDQyjvhthymfATNA60C3A+KgsmyHwzyTWG2ZGWqCCUVGcnWmzBriLCqKVggIvNgzFN4G5DwFrgaNLXwOeA9bZbJP4j80wMEXSHPCxOVO+yuYoYJHE28AEiXuAha25hatLt4HXSzxneE1o2PYxEmcAx0S/Bn8WmFlB1v/IvEYwVGgYiSOBDcD7G/yruvgBiRuBR3IMN38b4GM210nMD5BeAPzS5jKJ25JA7bnfA98DHm18RdlzkDgJ+CZwXqA7DbEB+LjNS5GmVk2dEWWaUDN9UvCZNyR9wfbKiIo+2Adrfx5YJrXQk/gtsCS832vzRcTtFH5Z0IoWOsdmucRhwZc32Zwqsbc5NzCZP1wPnGRXirf5N3DaaAL1WLlZtwOL7cwfluT7tFjido3iR61Alc/UEH1QYrbN88n3YZbEd1pFiEEgcDTwtXDx2xILJP7aBIP2yuQOHcHC+RUSdyRIKAvCd4BX0DIb7Z0pyXVsDxbcLjEPeCvZD66pfRdjBiG8f4s6UtXMLgU29VnEhpSmenAYNH+dxEiCSvUyYnNdhFh1Rhn9aOUqn7WGNGwFvtLAsi4GrlWdPAc1kWGhi8LVf5d0c0M4HVaEU52wUa/QFR3tANY1dOt964Ad8Yzr3/G++NPcVSkzHfg1sCVE54ttD9MIJfEp8MTA10/Ab0fYRc3mnzfRsRTMze0bmuhY+8cGwvnEaM/KE7uSNZXCrX4U9r5L4twkFDAvMDMC3NlaTbWWnUGkFKAM8YHpbS0tI9hWViIlzHKEtGdb/0uvq4D/hrvnRaFmB4YeA16rzjv9xHorWOW9NQJbWLaiNYztdP5kZ2K4zUPEPbFKafnoWhDYTQ3vWrDZjVDDwOHBDzZ2q/XKUoHYALTa8IrhMcHEpK20J1lvo9CrNYOvAhuj/ltOOwwXMFf2GlLFpuCvRwDDA2BKCwNj+5kIs2ihkOGnghdQ+cMs0KklnMKlr9ueDnxaYrrN62V7U9DuPItKyqEuJLYV8J8yBAyHNgDgX1W0r2SR2tovWHBiceOB+UUunJyXbO7tY7qstqN/NcJEWrnwxuafBS/DA5tJmT7MzhIOMaTHJbVBpKDRs3fMCiTBShmOcx/rWxK7WtrCZtIQ4KJRHB8vrPmYZHspMLWG40FtD2SALwPn1lHqBUk/BO/qctAVuLWcOxDsHM4CRno/1CqjwteQxJtJw9XLwQrFUL31auCazL/CCYk5zf6a6clUZzpsMSbjGQ1iKIlCu3aLeh3i3E3eHNjsSKavovO0kDgbZiZHa7YX0XlfhWcfzqhLxWtpsTAPsWMSz+4LKWRqYeEdQ8Dz4N3AAbWWZhKduTLOzRIfsZle43eCpCNCQPifxN762bPAjXSYLPBQDwRKfyzhGAOH7VRIJ/iZE9vP2A08PyQxQlW4nl7TnSMYZ7O/SYoSLwOfDEzOBj8UouJFwH39Gh9rkuSxAkCBABeRM70/O+zdBIwMak2sdTrMwcCcpp5Tz0V2Hkwi/stBTP736JAb7adTf+YUZkm8L9Bea2BQH1ipwJTNZWWtV+SK/cXnexzC72g91li+0aeEPiuKKKgvL0qplRhqS2mr7Y1BK+dLfCAmvoL0FmB7BU3tAD3aN+LK/u55/k5CxP4wJut696HAxUHxG6n6rGQpJC0Ll4y3+UZ5YSh/dtmciDnd9nTbbzSjqlzjSkmxqcxHG3KmfaXFivIrBJKvA+926yPLEpLawYuGbG+vLATAPuAE4Olcw9XomRS+c08ZbTA59kg7dADQ6a96rHuUzd8kJta7d9j+MGJf7HyxvU9iaTg4BNySRInhNUKnYEDxd2/l0AczFye7AhWd8s+Bie1HXgqVQND2U83B5cDmppS3ORN8ZUu8W7G3jWS8uN8X86q8Fbxt2buRocffLhfMl9Ktm4HlrXHIpklIGjFcAd4fmP4BVEk3giMKEANtX2RLJ3uScOlLRdtSijgN+Gl4vt/mCmAk0k7wS0ybJ4CbWmF9ALCqnq0Xlgohny7csva/YbBn5tEOXdzzLK0D6/Z9crjjJoknSgUkSzU31szeADzaQo4pEqtsJuRw6oyEihDelaSJgqURUjopBjv1FRNs7gGmJWXDY8ANfTQGualTVtgLnA+84hZyp1MNZMaNXTV0DNI7mGE0iBXwVaXVX0mcE3a9gjkP2FsOaew6T/WFW+BFSYswu8NN5wHLJcbFANGcyxnUqP7VarXrS4VyZPsXNpeGu3YDi6i+ZezAPI2duxV1E/38MHCJXU1Z67OfA+6yPaELojyARIV1k25jrm5SqAUcD/xG4oow0BwBLgEeVkarDTq2GeTZXhlD9VoJXCox4nSQCyStAQ7K2nCVShmlfov4qwWLoV1iksT9khY3tGoFLbZZmdPqFr8DEwcrLnJJYupOmyuLYHAm8Aj46KSIpL2y7S7h6cLGoSGVPljRZS71ALNW1JeA3/WoqBNYBrRaGAUm6fPbgAtJzmmAjwKPA/Mj0zmdyHBghD4/5CzwEzYnBCH3AhfaXtZaefREL4VAkemtG6mbdTcwV9LOIPzBwAPAj6lCb48Q5YrfzoPNOOC7Ng8Ch4ZzO8FzgbubgDDW5CpVFDFplqE6g35rgXXgk22eKQh/VWKjxIxSMc3ZMMZqkz1Mk3jY1dc7g3DkGeBkqu+XRx2v9bUx6fupTpHZwETqhmrYKjHLLlp4mAE8bnN9qKA71q8FHKL6suzJmvm47gNm2WxtLSrKfFf2W82zQdk6Owal9OVALm79dqfEIuAq0J5KXKCq7pcCT9teUFi5IXyqxF+A71fCJ4b22FwFLKrphzN511w3qPQZZdBTktBElL5yplg23AqeZbO5gMYUidXAGmB6DbspwArgzzbHFzlqs8QsiVurnDvWtWn40IOuUCY1Jk6jqCYa0hulkl1qtp6SOMXmWlfabuFh5gJPgtdK2gp8pmBjj+HbwCnAU9W57nykydeRv46fRUtV5BsTl/1S1H7Z42Zrn8RNmOOA1UXiFfAJ8PjCOquB4wQ3AvvyhN0WwylghdFYia62SsmjTSFAX29Uiz4GNCS2SyyUmE89CshVYICn6+cLge0N/aZKz3qqMb4kKIvkBrMt/HoiVQybjaVEHlDGKFrX2BwvscTwQs3bC8CS2p/WxHPpLnJ66tB95/li+i+yJtjFkW7f4KR/xpBXC+1gJtEZDxwj8Sx1RdKHiqwX67nPLSJ7/4Ot2fN/y5MeARygC7IAAAAASUVORK5CYII=" />
           </svg>
         </div>
         <div class="card-description">
@@ -228,6 +298,30 @@
     </div>
   </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById("toggleNav").addEventListener("click", addNextBtn);
+    document.getElementById("nextNav").addEventListener("click", slideNav);
+    
+    const secondNav = document.querySelector('.second-nav');
+    const firstNav = document.querySelector('.first-nav');
+    const navBG = document.querySelector('.navbar-collapse');
+    const nextBtn = document.querySelector('.next-button');
+
+    function addNextBtn() {
+      const navCollapseSelector = document.querySelector(".navbar-collapse");
+      var isPresent = navCollapseSelector.classList.contains('show');
+      console.log(isPresent);
+      nextBtn.style.opacity='1';
+      
+    }
+    
+    function slideNav() {
+      firstNav.style.left='47em';
+      firstNav.style.position='absolute';
+      secondNav.style.left='22em';
+    }
+    
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
