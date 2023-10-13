@@ -1,5 +1,3 @@
-<!-- TODO: Stay connected icon at navbar, page responsiveness  -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingham County DVA</title>
   <link rel="icon" href="assets/icon.png" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="newstyle.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
   
-  <!-- <div class="nav-wrapper sticky-lg-top">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid d-flex">
-        <div class="upper-nav" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-md fixed-top shadow-lg px-3" data-bs-theme="light">
+      <div class="container-fluid top-nav px-3">
+        <div class="top-nav-container">
+          <ul class="navbar-nav mb-lg-0 d-flex px-3 align-items-center top-nav-list">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About</a>
+              <a class="nav-link" href="#">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">News</a>
@@ -30,298 +28,226 @@
               <a class="nav-link" href="#">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quick Links</a>
+              <a class="nav-link" href="#">Support</a>
             </li>
-          </ul>
-          <form class="d-flex">
-            <input class="search-bar form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-            <button class="btn btn-link" type="submit">GO</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-    <nav class="navbar-lower navbar navbar-expand-lg">
-      <a class="navbar-brand" href="#">
-        <img src="assets/logo.png" alt="Ingham County Dept. of Veteran Affairs Logo" height="56px">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">VA Benefits</a>
+            <li class="nav-item quicklink-fb ms-auto">
+              <a href="#" class="nav-link">
+                <img src="assets/facebook-mini.png" alt="fb" />  
+                <span class="quicklink-text">stay connected</span>
+              </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Programs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Eligibility</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Outreach</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Financial Assitance</a>
+              <form class="d-flex">
+                <input class="search-bar form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                <button class="btn btn-link" type="submit">GO</button>
+              </form>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-  </div> -->
-
-  <nav class="navbar navbar-expand-md fixed-top shadow-lg px-3" data-bs-theme="light">
-    <div class="container-fluid top-nav px-3">
-      <div class="top-nav-container">
-        <ul class="navbar-nav mb-lg-0 d-flex px-3 align-items-center top-nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Events</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
-          </li>
-          <li class="nav-item quicklink-fb ms-auto">
-            <a href="#" class="nav-link">
-              <img src="assets/facebook-mini.png" alt="fb" />  
-              <span class="quicklink-text">stay connected</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="container-fluid bottom-nav">
-      <a class="navbar-brand z-1" href="#">
-        <img src="assets/logo.png" alt="Ingham County Dept. of Veteran Affairs Logo" height="56px">
-      </a>
-      <button class="navbar-toggler z-1" type="button" id="toggleNav" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="first-nav">
-          <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">VA Benefits</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Programs</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Eligibility</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Outreach</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Financial Assitance</a>
-            </li>
-          </ul>
-        </div>
-        <div class="second-nav">
-          <ul class="navbar-nav d-flex align-items-center">
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">News</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
-          </ul>
-        </div>
-        <button class="next-button" href="#nextNav" id="nextNav">
-          <img src="assets/right-arrow.svg" height="80px"/>
+      <div class="container-fluid bottom-nav">
+        <a class="navbar-brand z-1" href="#">
+          <img src="assets/logo.png" alt="Ingham County Dept. of Veteran Affairs Logo" height="56px">
+        </a>
+        <button class="navbar-toggler z-1" type="button" id="toggleNav" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-  </nav>
-  
-  <section class="hero-section container-fluid w-100">
-    <div class="heading">
-      <h1>
-        We show
-        <span class="superheading">Honor</span>
-        To those who served
-      </h1>
-    </div>
-    <div class="hero-shape">
-      <picture>
-        <img src="assets/shape-1.png" alt="hero-shape" width="360px" height="430px">
-      </picture>
-    </div>
-  </section>
-  <section class="card-section w-100">
-    <div class="card-wrapper">
-      <div class="card-content">
-        <div class="card-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31px" height="45px">
-            <defs>
-            <filter id="Filter_0">
-                <feFlood flood-color="rgb(178, 34, 52)" flood-opacity="1" result="floodOut" />
-                <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
-                <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
-            </filter>
-  
-            </defs>
-            <g filter="url(#Filter_0)">
-            <path fill-rule="evenodd"  fill="rgb(0, 0, 0)"
-            d="M26.174,18.368 L28.223,0.000 L2.797,0.000 L4.845,18.352 C1.873,21.169 -0.001,25.125 -0.001,29.538 C-0.001,38.077 6.939,44.1000 15.500,44.1000 C24.061,44.1000 31.000,38.077 31.000,29.538 C31.000,25.135 29.134,21.184 26.174,18.368 ZM19.664,2.813 L25.398,2.813 L23.458,16.333 C22.281,15.624 21.010,15.060 19.664,14.670 L19.664,2.813 ZM14.093,2.813 L16.839,2.813 L16.839,14.171 C16.395,14.131 15.956,14.075 15.500,14.075 C15.022,14.075 14.560,14.131 14.093,14.177 L14.093,2.813 ZM11.268,2.813 L11.268,14.690 C9.954,15.078 8.712,15.632 7.559,16.322 L5.621,2.813 L11.268,2.813 ZM15.500,42.175 C8.515,42.175 2.830,36.505 2.830,29.538 C2.830,22.571 8.515,16.899 15.500,16.899 C22.486,16.899 28.168,22.571 28.168,29.538 C28.168,36.505 22.486,42.175 15.500,42.175 Z"/>
-            </g>
-          </svg>
-        </div>
-        <div class="card-description">
-          <h3 class="card-title">Benefits</h3>
-          <p class="card-text">As a Veteran you are entitled to various benefits including Property Tax Exemption, VA compensation, VA Disability Pension, Home Loan Guaranty, Small Business and Employment Resources, Education.</p>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="first-nav">
+            <ul class="navbar-nav mb-lg-0 d-flex align-items-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">VA Benefits</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Programs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Eligibility</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Outreach</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Financial Assitance</a>
+              </li>
+            </ul>
+          </div>
+          <div class="second-nav">
+            <ul class="navbar-nav d-flex align-items-center">
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Events</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Support</a></li>
+            </ul>
+          </div>
+          <button class="next-button" href="#nextNav" id="nextNav">
+            <img src="assets/right-arrow.svg" height="80px"/>
+          </button>
         </div>
       </div>
+    </nav>
 
-      <div class="card-content"> 
-        <div class="card-icon">
-          <svg 
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          width="53px" height="49px">
-          <image  x="0px" y="0px" width="53px" height="49px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADUAAAAxCAYAAAB6d+FmAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH5woCARwyCE43WgAACpZJREFUaN6FmnuMXVUVxn/f7bSVWgQmGCD4ogKtEkoLSUFLgIKQPlKDlYfKowX9A4WYKIqKmBI0EF9ERSzGoKYITQilhBRrqLZJ5dVCLcEES0kRGlEeglCqTWk7n3+cc/ZZe58zw05m7tx79l57Pb71vKN7j52BJMDYIAGAXb1KhM+FMYKJwJHAe0Bv2X4Z2NXsb1ZJLz6LexDUjybbHAYcCOyUeBHY03empBX5HaoeOn2QVnsREjKchn2BxFk2x0rNYyNhw3bBH4G7bdaXwmWEkwKF5DnABTZnS5pS0a2eGyzYBvwJWGHzkEQyQkZVLX2tmjoz2xAlrt8vlLjBZkbGaMNedz8SW4CrgfX0LmH7DImbgZkNrbEsWq8twLXAH0azlgSDRis9cDkEuEfS/aAZDQyjvhthymfATNA60C3A+KgsmyHwzyTWG2ZGWqCCUVGcnWmzBriLCqKVggIvNgzFN4G5DwFrgaNLXwOeA9bZbJP4j80wMEXSHPCxOVO+yuYoYJHE28AEiXuAha25hatLt4HXSzxneE1o2PYxEmcAx0S/Bn8WmFlB1v/IvEYwVGgYiSOBDcD7G/yruvgBiRuBR3IMN38b4GM210nMD5BeAPzS5jKJ25JA7bnfA98DHm18RdlzkDgJ+CZwXqA7DbEB+LjNS5GmVk2dEWWaUDN9UvCZNyR9wfbKiIo+2Adrfx5YJrXQk/gtsCS832vzRcTtFH5Z0IoWOsdmucRhwZc32Zwqsbc5NzCZP1wPnGRXirf5N3DaaAL1WLlZtwOL7cwfluT7tFjido3iR61Alc/UEH1QYrbN88n3YZbEd1pFiEEgcDTwtXDx2xILJP7aBIP2yuQOHcHC+RUSdyRIKAvCd4BX0DIb7Z0pyXVsDxbcLjEPeCvZD66pfRdjBiG8f4s6UtXMLgU29VnEhpSmenAYNH+dxEiCSvUyYnNdhFh1Rhn9aOUqn7WGNGwFvtLAsi4GrlWdPAc1kWGhi8LVf5d0c0M4HVaEU52wUa/QFR3tANY1dOt964Ad8Yzr3/G++NPcVSkzHfg1sCVE54ttD9MIJfEp8MTA10/Ab0fYRc3mnzfRsRTMze0bmuhY+8cGwvnEaM/KE7uSNZXCrX4U9r5L4twkFDAvMDMC3NlaTbWWnUGkFKAM8YHpbS0tI9hWViIlzHKEtGdb/0uvq4D/hrvnRaFmB4YeA16rzjv9xHorWOW9NQJbWLaiNYztdP5kZ2K4zUPEPbFKafnoWhDYTQ3vWrDZjVDDwOHBDzZ2q/XKUoHYALTa8IrhMcHEpK20J1lvo9CrNYOvAhuj/ltOOwwXMFf2GlLFpuCvRwDDA2BKCwNj+5kIs2ihkOGnghdQ+cMs0KklnMKlr9ueDnxaYrrN62V7U9DuPItKyqEuJLYV8J8yBAyHNgDgX1W0r2SR2tovWHBiceOB+UUunJyXbO7tY7qstqN/NcJEWrnwxuafBS/DA5tJmT7MzhIOMaTHJbVBpKDRs3fMCiTBShmOcx/rWxK7WtrCZtIQ4KJRHB8vrPmYZHspMLWG40FtD2SALwPn1lHqBUk/BO/qctAVuLWcOxDsHM4CRno/1CqjwteQxJtJw9XLwQrFUL31auCazL/CCYk5zf6a6clUZzpsMSbjGQ1iKIlCu3aLeh3i3E3eHNjsSKavovO0kDgbZiZHa7YX0XlfhWcfzqhLxWtpsTAPsWMSz+4LKWRqYeEdQ8Dz4N3AAbWWZhKduTLOzRIfsZle43eCpCNCQPifxN762bPAjXSYLPBQDwRKfyzhGAOH7VRIJ/iZE9vP2A08PyQxQlW4nl7TnSMYZ7O/SYoSLwOfDEzOBj8UouJFwH39Gh9rkuSxAkCBABeRM70/O+zdBIwMak2sdTrMwcCcpp5Tz0V2Hkwi/stBTP736JAb7adTf+YUZkm8L9Bea2BQH1ipwJTNZWWtV+SK/cXnexzC72g91li+0aeEPiuKKKgvL0qplRhqS2mr7Y1BK+dLfCAmvoL0FmB7BU3tAD3aN+LK/u55/k5CxP4wJut696HAxUHxG6n6rGQpJC0Ll4y3+UZ5YSh/dtmciDnd9nTbbzSjqlzjSkmxqcxHG3KmfaXFivIrBJKvA+926yPLEpLawYuGbG+vLATAPuAE4Olcw9XomRS+c08ZbTA59kg7dADQ6a96rHuUzd8kJta7d9j+MGJf7HyxvU9iaTg4BNySRInhNUKnYEDxd2/l0AczFye7AhWd8s+Bie1HXgqVQND2U83B5cDmppS3ORN8ZUu8W7G3jWS8uN8X86q8Fbxt2buRocffLhfMl9Ktm4HlrXHIpklIGjFcAd4fmP4BVEk3giMKEANtX2RLJ3uScOlLRdtSijgN+Gl4vt/mCmAk0k7wS0ybJ4CbWmF9ALCqnq0Xlgohny7csva/YbBn5tEOXdzzLK0D6/Z9crjjJoknSgUkSzU31szeADzaQo4pEqtsJuRw6oyEihDelaSJgqURUjopBjv1FRNs7gGmJWXDY8ANfTQGualTVtgLnA+84hZyp1MNZMaNXTV0DNI7mGE0iBXwVaXVX0mcE3a9gjkP2FsOaew6T/WFW+BFSYswu8NN5wHLJcbFANGcyxnUqP7VarXrS4VyZPsXNpeGu3YDi6i+ZezAPI2duxV1E/38MHCJXU1Z67OfA+6yPaELojyARIV1k25jrm5SqAUcD/xG4oow0BwBLgEeVkarDTq2GeTZXhlD9VoJXCox4nSQCyStAQ7K2nCVShmlfov4qwWLoV1iksT9khY3tGoFLbZZmdPqFr8DEwcrLnJJYupOmyuLYHAm8Aj46KSIpL2y7S7h6cLGoSGVPljRZS71ALNW1JeA3/WoqBNYBrRaGAUm6fPbgAtJzmmAjwKPA/Mj0zmdyHBghD4/5CzwEzYnBCH3AhfaXtZaefREL4VAkemtG6mbdTcwV9LOIPzBwAPAj6lCb48Q5YrfzoPNOOC7Ng8Ch4ZzO8FzgbubgDDW5CpVFDFplqE6g35rgXXgk22eKQh/VWKjxIxSMc3ZMMZqkz1Mk3jY1dc7g3DkGeBkqu+XRx2v9bUx6fupTpHZwETqhmrYKjHLLlp4mAE8bnN9qKA71q8FHKL6suzJmvm47gNm2WxtLSrKfFf2W82zQdk6Owal9OVALm79dqfEIuAq0J5KXKCq7pcCT9teUFi5IXyqxF+A71fCJ4b22FwFLKrphzN511w3qPQZZdBTktBElL5yplg23AqeZbO5gMYUidXAGmB6DbspwArgzzbHFzlqs8QsiVurnDvWtWn40IOuUCY1Jk6jqCYa0hulkl1qtp6SOMXmWlfabuFh5gJPgtdK2gp8pmBjj+HbwCnAU9W57nykydeRv46fRUtV5BsTl/1S1H7Z42Zrn8RNmOOA1UXiFfAJ8PjCOquB4wQ3AvvyhN0WwylghdFYia62SsmjTSFAX29Uiz4GNCS2SyyUmE89CshVYICn6+cLge0N/aZKz3qqMb4kKIvkBrMt/HoiVQybjaVEHlDGKFrX2BwvscTwQs3bC8CS2p/WxHPpLnJ66tB95/li+i+yJtjFkW7f4KR/xpBXC+1gJtEZDxwj8Sx1RdKHiqwX67nPLSJ7/4Ot2fN/y5MeARygC7IAAAAASUVORK5CYII=" />
-          </svg>
-        </div>
-        <div class="card-description">
-          <h3 class="card-title">VA health care</h3>
-          <p class="card-text">VA health care is available for local veterans.  For assistance in applying for VA Health Care please contact Ingham County Department of Veteran Affairs at (517) 887-4331. </p>
-        </div>
+    <section class="hero-section container-fluid w-100">
+      <div class="heading">
+        <h1>
+          We show 
+          <span class="superheading">Honor</span>
+          To those who served
+        </h1>
       </div>
+      <div class="hero-shape">
+        <picture><img src="assets/shape-1.png" alt="hero-shape" width="290px" height="430px"></picture>
+      </div>
+      <div class="hero-section-bg"></div>
+    </section>
 
-      <div class="card-content">
-        <div class="card-icon">
-          <svg 
+    <section class="card-section w-100">
+      <div class="card-wrapper">
+        <div class="card-content">
+          <div class="card-icon">
+            <span class="benefits-icon"></span>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Benefits</h3>
+            <p class="card-text">As a Veteran you are entitled to various benefits including Property Tax Exemption, VA compensation, VA Disability Pension, Home Loan Guaranty, Small Business and Employment Resources, Education.</p>
+          </div>
+        </div>
+        
+        <div class="card-content">
+          <div class="card-icon">
+            <svg 
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="29px" height="59px">
-            <image  x="0px" y="0px" width="29px" height="59px"  xlink:href="data:img/png;base64,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" />
-          </svg>
+            width="80px" height="80px">
+            <image  x="0px" y="0px" width="80px" height="80px"  xlink:href="data:img/png;base64,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" />
+            </svg>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">VA health care</h3>
+            <p class="card-text">VA health care is available for local veterans.  For assistance in applying for VA Health Care please contact Ingham County Department of Veteran Affairs at (517) 887-4331. </p>
+          </div>
         </div>
-        <div class="card-description">
-          <h3 class="card-title">Survivors Memorial</h3>
-          <p class="card-text">There are several benefits that commemorate a veteran's sacrifice to our nation and benefits for survivors. It is our privilege to discuss available resources with you and your loved ones.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="subsection d-flex w-100">
-    <div class="left-content">
-      <picture>
-        <img src="assets/salute.png" alt="Veteran Salute">
-      </picture>
-      <div class="newsboard-container">
-        <div class="newsboard-heading">
-          <h3>Latest News</h3>
-          <p class="subheading">
-            Stay up-to-date on what's <br/> happening
-          </p>
-        </div>
-        <div class="newsboard-content-wrapper">
 
-          <article class="newsboard-content">
-            <p class="news-date">1-16-2019</p>
-            <h4 class="news-title">Airborne Hazards and Open Burn Pit Registry</h4>
-          </article>
-          <hr class="content-divider"></hr>
-          <article class="newsboard-content">
-            <p class="news-date">1-15-2019</p>
-            <h4 class="news-title">Michigan Veterans Homeowners <br/>
-              Assistance Programs</h4>
-          </article>
-          <hr class="content-divider"></hr>
-          <article class="newsboard-content">
-            <p class="news-date">1-13-2019</p>
-            <h4 class="news-title">PA 161 OF 2013 Disabled Veteran Exemption <br/>
-              granted property tax exemption to the <br/>
-              following eligible veterans: </h4>
-          </article>
+        <div class="card-content">
+          <div class="card-icon">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="80px" height="80px">
+              <image  x="0px" y="0px" width="80px" height="80px"  xlink:href="data:img/png;base64,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" />
+            </svg>
+          </div>
+          <div class="card-description">
+            <h3 class="card-title">Survivors Memorial</h3>
+            <p class="card-text">There are several benefits that commemorate a veteran's sacrifice to our nation and benefits for survivors. It is our privilege to discuss available resources with you and your loved ones.</p>
+          </div>
+        </div>
 
-          <button class="callToActionBtn" href="#">See All News</button>
-          
         </div>
       </div>
-    </div>
-    <div class="right-content">
-      <div class="shortcuts-container">
-        <div class="shortcuts-heading">
-          <h3>Quick Links</h3>
-          <p>Easy access to all the important <br/> links you need.</p>
+    </section>
+
+    <section class="subsection d-flex w-100">
+      <div class="left-content">
+        <picture>
+          <img src="assets/salute.png" alt="Veteran Salute">
+        </picture>
+        <div class="newsboard-container">
+          <div class="newsboard-heading">
+            <h3>Latest News</h3>
+            <p class="subheading">Stay up-to-date on what's <br/>happening</p>
+          </div>
+          <div class="newsboard-content-wrapper">
+            <article class="newsboard-content">
+              <p class="news-date">1-16-2019</p>
+              <h4 class="news-title">Airborne Hazards and Open Burn Pit Registry</h4>
+            </article>
+            <article class="newsboard-content">
+              <p class="news-date">1-15-2019</p>
+              <h4 class="news-title">Michigan Veterans Homeowners <br/>
+                Assistance Programs</h4>
+            </article>
+            <article class="newsboard-content">
+              <p class="news-date">1-13-2019</p>
+              <h4 class="news-title">PA 161 OF 2013 Disabled Veteran Exemption <br/>
+                granted property tax exemption to the <br/>
+                following eligible veterans: </h4>
+            </article>
+            <button class="callToActionBtn" href="#">See All News</button>
+          </div>
         </div>
-        <ul class="shortcut-links-list">
-          <li><a href="">Events</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">Resources</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">Request an Honorary Resolution</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">All In for Ingham</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">Newsletter</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">State of the County</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">Meet Your County Commissioner</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">MCL Search</a></li>
-          <hr class="shortcut-links-divider">
-          <li><a href="">Appointed Boards</a></li>
-          <hr class="shortcut-links-divider">
-        </ul>
       </div>
-    </div>
-  </section>
+      <div class="right-content">
+        <div class="shortcuts-container">
+          <div class="shortcuts-heading">
+            <h3>Quick Links</h3>
+            <p>Easy access to all the important <br/> links you need.</p>
+          </div>
+          <ul class="shortcut-links-list">
+            <li><a href="">Events</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">Resources</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">Request an Honorary Resolution</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">All In for Ingham</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">Newsletter</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">State of the County</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">Meet Your County Commissioner</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">MCL Search</a></li>
+            <hr class="shortcut-links-divider">
+            <li><a href="">Appointed Boards</a></li>
+            <hr class="shortcut-links-divider">
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="company-info-wrapper">
+        <p class="footer-description">
+          HUMAN SERVICES BUILDING, ENTRANCE 2 5303 S. CEDAR, LANSING, LANSING, MI  48911 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;<span class="breakline"><br/></span>PHONE:  (517) 887-4331   •   FAX:  (517) 272-4185MONDAY - FRIDAY 8 AM - 12 NOON &nbsp; &nbsp; &nbsp; &nbsp; 1 PM - 5 PM
+        </p>
+      </div>
+      <div class="contact-links">
+        <picture>
+          <img src="assets/aid-vet.png" alt="AidVet">
+          <img src="assets/vet-crisis-line.png" alt="Crisis Line">
+          <img src="assets/facebook.png" alt="facebook">
+        </picture>
+      </div>
+    </footer>
 
-
-  <footer>
-    <div class="company-info-wrapper">
-      <p class="footer-description">
-        HUMAN SERVICES BUILDING, ENTRANCE 2 5303 S. CEDAR, LANSING, LANSING, MI  48911 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;PHONE:  (517) 887-4331   •   FAX:  (517) 272-4185MONDAY - FRIDAY 8 AM - 12 NOON &nbsp; &nbsp; &nbsp; &nbsp; 1 PM - 5 PM
-      </p>
-    </div>
-    <!-- <div class="aid-vet"></div>
-    <div class="vets-crisis-line"></div>
-    <div class="facebook-link"></div> -->
-    <div class="contact-links">
-      <picture>
-        <img src="assets/aid-vet.png" alt="aid-vet" />
-        <img src="assets/vet-crisis-line.png" alt="vets crisis line" />
-        <img src="assets/facebook.png" alt="facebook" />
-      </picture>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById("toggleNav").addEventListener("click", addNextBtn);
-    document.getElementById("nextNav").addEventListener("click", slideNav);
     
-    const secondNav = document.querySelector('.second-nav');
-    const firstNav = document.querySelector('.first-nav');
-    const navBG = document.querySelector('.navbar-collapse');
-    const nextBtn = document.querySelector('.next-button');
-
-    function addNextBtn() {
-      const navCollapseSelector = document.querySelector(".navbar-collapse");
-      var isPresent = navCollapseSelector.classList.contains('show');
-      console.log(isPresent);
-      nextBtn.style.opacity='1';
+    <script>
+      document.getElementById("toggleNav").addEventListener("click", addNextBtn);
+      document.getElementById("nextNav").addEventListener("click", slideNav);
       
-    }
-    
-    function slideNav() {
-      firstNav.style.left='47em';
-      firstNav.style.position='absolute';
-      secondNav.style.left='22em';
-    }
-    
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      const secondNav = document.querySelector('.second-nav');
+      const firstNav = document.querySelector('.first-nav');
+      const navBG = document.querySelector('.navbar-collapse');
+      const nextBtn = document.querySelector('.next-button');
+  
+      function addNextBtn() {
+        const navCollapseSelector = document.querySelector(".navbar-collapse");
+        var isPresent = navCollapseSelector.classList.contains('show');
+        console.log(isPresent);
+        nextBtn.style.opacity='1';
+        
+      }
+      
+      function slideNav() {
+        firstNav.style.opacity='0';
+        secondNav.style.position='relative';
+        secondNav.style.left='0';
+        secondNav.style.padding='0'
+      }
+      
+    </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js" integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
